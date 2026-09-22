@@ -4,33 +4,78 @@ chat:
   format: '&8[&a%player%&8] &f%message%'
 
 messages:
-  prefix: '&2GreenChat &8» &f'
-  no-permission: '&cNie masz uprawnień.'
-  chat-disabled: '&cChat jest obecnie wyłączony.'
-  muted: '&cJesteś wyciszony. Pozostało: &f%time%&c.'
-  mute-success: '&aWyciszono &f%player% &ana &f%time%&a.'
-  unmute-success: '&aOdciszono &f%player%&a.'
-  not-muted: '&eTen gracz nie jest wyciszony.'
-  slowmode: '&aSlowmode ustawiony na &f%seconds%&as.'
-  chat-status-on: '&aChat został włączony.'
-  chat-status-off: '&cChat został wyłączony.'
-  cleared: '&aChat został wyczyszczony.'
-  reload: '&aGreenChat został przeładowany.'
-  unknown-player: '&cNie znaleziono gracza.'
+  # Możesz zostawić puste, jeśli nie chcesz prefiksu GreenChat
+  prefix: ''
+
+  no-permission: '&c✕ Nie masz uprawnień.'
+
+  # CHAT
+  chat-disabled: '&c✕ Chat jest obecnie wyłączony.'
+  chat-status-on: '&a✓ Chat został włączony.'
+  chat-status-off: '&c✓ Chat został wyłączony.'
+  cleared: '&a✓ Chat został pomyślnie wyczyszczony.'
+
+  # MUTE
+  muted: '&c✕ Zostałeś wyciszony. Pozostało: &f%time%&c.'
+  mute-success: '&a✓ Pomyślnie wyciszono gracza &f%player% &ana &f%time%&a.'
+  unmute-success: '&a✓ Pomyślnie odciszono gracza &f%player%&a.'
+  unmuted-player: '&a✓ Zostałeś odciszony. Możesz ponownie pisać na czacie.'
+  not-muted: '&e⚠ Gracz &f%player% &enie jest wyciszony.'
+  mute-already: '&e⚠ Gracz &f%player% &ejuż jest wyciszony.'
+  mute-self: '&c✕ Nie możesz wyciszyć samego siebie.'
+
+  # WIADOMOŚĆ DLA OSOBY, KTÓRA JEST WYCISZONA
+  you-are-muted: '&c✕ Zostałeś wyciszony na &f%time%&c. Powód: &f%reason%'
+
+  # SLOWMODE
+  slowmode: '&c✕ Musisz odczekać jeszcze &f%seconds%s &cprzed napisaniem kolejnej wiadomości.'
+  slowmode-set: '&a✓ Slowmode ustawiony na &f%seconds%&as.'
+  slowmode-off: '&a✓ Slowmode został wyłączony.'
+
+  # RELOAD
+  reload: '&a✓ Konfiguracja została pomyślnie przeładowana.'
+
+  # GRACZ
+  unknown-player: '&c✕ Nie znaleziono gracza.'
+
+  # KOMENDY / UŻYCIE
   usage-mute: '&cUżycie: /greenchat mute <gracz> <czas> [powód]'
   usage-unmute: '&cUżycie: /greenchat unmute <gracz>'
   usage-slowmode: '&cUżycie: /greenchat slowmode <sekundy>'
   broadcast-usage: '&cUżycie: /greenchat broadcast <tekst>'
-  broadcast-format: '&6&lOGŁOSZENIE §8» &f%message%'
+
+  # BROADCAST
+  broadcast-format: '&6&lOGŁOSZENIE &8» &f%message%'
+
+  # MUTELIST
+  mutelist-empty: '&a✓ Aktualnie nikt nie jest wyciszony.'
+  mutelist-title: '&cWyciszeni gracze'
+  mutelist-remaining: '&7Pozostało: &f%time%'
+  mutelist-click: '&eKliknij, aby odciszyć gracza.'
+
+  # MENU
+  menu-title: '&2GreenChat'
+  menu-chat-on: '&aChat: WŁĄCZONY'
+  menu-chat-off: '&cChat: WYŁĄCZONY'
+  menu-chat-on-lore: '&7Kliknij, aby wyłączyć chat.'
+  menu-chat-off-lore: '&7Kliknij, aby włączyć chat.'
+  menu-mutelist: '&aMutelist'
+  menu-mutelist-lore: '&7Kliknij, aby zobaczyć wyciszonych graczy.'
+  menu-slowmode: '&eSlowmode'
+  menu-clearchat: '&cWyczyść chat'
+  menu-reload: '&bReload'
 
 help:
-  - '&2&lGreenChat &7- pomoc'
-  - '&8/greenchat menu &7- otwiera menu ustawień chatu'
-  - '&8/greenchat mutelist &7- lista wyciszonych graczy'
-  - '&8/greenchat mute <gracz> <czas> [powód] &7- wycisza gracza'
-  - '&8/greenchat unmute <gracz> &7- usuwa mute'
-  - '&8/greenchat clearchat &7- czyści chat'
-  - '&8/greenchat slowmode <sekundy> &7- ustawia slowmode'
-  - '&8/greenchat broadcast <tekst> &7- wysyła ogłoszenie'
-  - '&8/greenchat reload &7- przeładowuje config'
-  - '&8/greenchat pomoc &7- pokazuje pomoc'
+  - ''
+  - '&2&lGreenChat &8» &7Pomoc'
+  - ''
+  - '&a/greenchat menu &8- &7otwiera menu ustawień chatu'
+  - '&a/greenchat mutelist &8- &7lista wyciszonych graczy'
+  - '&a/greenchat mute <gracz> <czas> [powód] &8- &7wycisza gracza'
+  - '&a/greenchat unmute <gracz> &8- &7usuwa mute'
+  - '&a/greenchat clearchat &8- &7czyści chat'
+  - '&a/greenchat slowmode <sekundy> &8- &7ustawia slowmode'
+  - '&a/greenchat broadcast <tekst> &8- &7wysyła ogłoszenie'
+  - '&a/greenchat reload &8- &7przeładowuje config'
+  - '&a/greenchat pomoc &8- &7pokazuje pomoc'
+  - '' 
