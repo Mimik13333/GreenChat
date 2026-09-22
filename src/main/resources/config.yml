@@ -1,0 +1,36 @@
+chat:
+  enabled: true
+  slowmode-seconds: 0
+  format: '&8[&a%player%&8] &f%message%'
+
+messages:
+  prefix: '&2GreenChat &8» &f'
+  no-permission: '&cNie masz uprawnień.'
+  chat-disabled: '&cChat jest obecnie wyłączony.'
+  muted: '&cJesteś wyciszony. Pozostało: &f%time%&c.'
+  mute-success: '&aWyciszono &f%player% &ana &f%time%&a.'
+  unmute-success: '&aOdciszono &f%player%&a.'
+  not-muted: '&eTen gracz nie jest wyciszony.'
+  slowmode: '&aSlowmode ustawiony na &f%seconds%&as.'
+  chat-status-on: '&aChat został włączony.'
+  chat-status-off: '&cChat został wyłączony.'
+  cleared: '&aChat został wyczyszczony.'
+  reload: '&aGreenChat został przeładowany.'
+  unknown-player: '&cNie znaleziono gracza.'
+  usage-mute: '&cUżycie: /greenchat mute <gracz> <czas> [powód]'
+  usage-unmute: '&cUżycie: /greenchat unmute <gracz>'
+  usage-slowmode: '&cUżycie: /greenchat slowmode <sekundy>'
+  broadcast-usage: '&cUżycie: /greenchat broadcast <tekst>'
+  broadcast-format: '&6&lOGŁOSZENIE §8» &f%message%'
+
+help:
+  - '&2&lGreenChat &7- pomoc'
+  - '&8/greenchat menu &7- otwiera menu ustawień chatu'
+  - '&8/greenchat mutelist &7- lista wyciszonych graczy'
+  - '&8/greenchat mute <gracz> <czas> [powód] &7- wycisza gracza'
+  - '&8/greenchat unmute <gracz> &7- usuwa mute'
+  - '&8/greenchat clearchat &7- czyści chat'
+  - '&8/greenchat slowmode <sekundy> &7- ustawia slowmode'
+  - '&8/greenchat broadcast <tekst> &7- wysyła ogłoszenie'
+  - '&8/greenchat reload &7- przeładowuje config'
+  - '&8/greenchat pomoc &7- pokazuje pomoc'
