@@ -1,0 +1,17 @@
+name: GreenChat
+version: ${version}
+main: pl.mimik.greenchat.GreenChat
+api-version: '1.21'
+author: Mimik
+commands:
+  greenchat:
+    description: Zarządzanie czatem
+    usage: /greenchat pomoc
+    aliases: [gchat]
+permissions:
+  greenchat.admin:
+    description: Dostęp do administracyjnych funkcji GreenChat
+    default: op
+  greenchat.bypass:
+    description: Omija blokadę chatu, mute i slowmode
+    default: op
